@@ -7,8 +7,6 @@ By [chrisullyott](https://github.com/chrisullyott/).
 ## Basic usage
 
 ```
-require 'vendor/autoload.php';
-
 $file = 'path/to/wordpress_export.xml';
 $parser = new WordsPressed($file);
 $items = $parser->getItems();
