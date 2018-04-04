@@ -1,6 +1,6 @@
 # wordspressed
 
-Parses a [WordPress export file](https://codex.wordpress.org/Tools_Export_Screen) (XML) with PHP, including categories and "post meta" (custom fields).
+Parses a [Wordpress export file](https://codex.wordpress.org/Tools_Export_Screen) (XML) with PHP, including categories and "post meta" (custom fields).
 
 By [chrisullyott](https://github.com/chrisullyott/).
 
