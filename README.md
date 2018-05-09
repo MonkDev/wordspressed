@@ -2,6 +2,8 @@
 
 Parses a [Wordpress export file](https://codex.wordpress.org/Tools_Export_Screen) (XML) with PHP, including categories and "post meta" (custom fields).
 
+Created specifically for Wordpress Export XML files as opposed to public feeds.
+
 By [chrisullyott](https://github.com/chrisullyott/).
 
 ## Basic usage
