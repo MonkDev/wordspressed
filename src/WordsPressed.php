@@ -205,7 +205,41 @@ class WordsPressed
      */
     public function getItems()
     {
-        return self::buildItems($this->getXmlArray(), 'item');
+        $items = self::buildItems($this->getXmlArray(), 'item');
+
+        return self::distributeKeys($items);
+    }
+
+    /**
+     * Look across every item in an array of arrays ensure each array has
+     * the same keys, adding empty keys where necessary.
+     *
+     * @param  array  $items An array of arrays
+     * @return array
+     */
+    private static function distributeKeys(array $items)
+    {
+        $keys = [];
+
+        foreach ($items as $item) {
+            $keys = array_unique(array_merge($keys, array_keys($item)));
+        }
+
+        foreach ($items as $itemKey => $item) {
+            $newItem = [];
+
+            foreach ($keys as $valueKey) {
+                if (isset($items[$itemKey][$valueKey])) {
+                    $newItem[$valueKey] = $item[$valueKey];
+                } else {
+                    $newItem[$valueKey] = null;
+                }
+            }
+
+            $items[$itemKey] = $newItem;
+        }
+
+        return $items;
     }
 
     /**
