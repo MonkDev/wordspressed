@@ -1,25 +1,26 @@
 {
-    "name":"MonkDev/wordspressed",
-    "type":"library",
-    "description":"Parse a WordPress XML export into a simple array.",
-    "homepage":"https://github.com/MonkDev/wordspressed",
-    "license":"MIT",
-    "authors":[
+    "name": "MonkDev/wordspressed",
+    "type": "library",
+    "description": "Parse a WordPress XML export into a simple array.",
+    "homepage": "https://github.com/MonkDev/wordspressed",
+    "license": "MIT",
+    "authors": [
         {
-            "name":"Chris Ullyott",
-            "email":"contact@chrisullyott.com",
-            "homepage":"http://www.chrisullyott.com"
+            "name": "Chris Ullyott",
+            "email": "contact@chrisullyott.com",
+            "homepage": "http://www.chrisullyott.com"
         }
     ],
-    "support":{
-        "issues":"https://github.com/MonkDev/wordspressed/issues",
-        "source":"https://github.com/MonkDev/wordspressed"
+    "support": {
+        "issues": "https://github.com/MonkDev/wordspressed/issues",
+        "source": "https://github.com/MonkDev/wordspressed"
     },
-    "require":{
-        "php":">=5.4.0"
+    "require": {
+        "php": ">=5.4.0",
+        "ext-tidy": "*"
     },
-    "autoload":{
-        "classmap":[
+    "autoload": {
+        "classmap": [
             "src/"
         ]
     }
